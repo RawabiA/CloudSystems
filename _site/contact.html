@@ -5,10 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
+
+
         body {
             direction: rtl;
             background-color: #f2f2f2e;
             color:gray;
+            margin: 0px;
+           
         }
         
         .header {
@@ -26,11 +30,7 @@
             font-size: 50px;
         }
         
-        .header .logo {
-            max-height: 100px;
-            float: right;
-            margin: 10px;
-        }
+       
         
         .header .header-text {
             padding-top: 12px;
@@ -55,11 +55,11 @@
         }
         
         .content h2 {
-            font-size: 35px;
+            font-size: 25px;
         }
         
         .content p {
-            font-size: 20px;
+            font-size: 18px;
         }
         
         .content .contentText {
@@ -68,21 +68,381 @@
             width: 100%;
         }
         
-    </style>
 
-    </head>
+        
+        
+        .footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: right;
+	font: bold 12px sans-serif;
+    Height: 20em;
+    clear: both;
+     margin-bottom: 0px;
+
+    padding: 55px 50px;
+	/*
+	clear: both;
+    position: relative;
+    z-index: 100;
+     margin-top: -3em;
+    
+    bottom: 0;*/
+    
+}
+ 
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-right{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 20px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: right;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-left{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+     max-height: 50px;
+            float: right;
+            margin: 10px;
+}
+
+
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
+       .header-fixed .logo {
+            max-height: 70px;
+            float: right;
+            margin: 10px;
+        }
+
+
+
+.header-fixed {
+	background-color:#292c2f;
+	box-shadow:0 1px 1px #ccc;
+	padding: 20px 40px;
+	height: 80px;
+	color: #ffffff;
+	box-sizing: border-box;
+	top:-100px;
+
+	-webkit-transition:top 0.3s;
+	transition:top 0.3s;
+}
+
+.header-fixed .header-limiter {
+	max-width: 1200px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+/*	The header placeholder. It is displayed when the header is fixed to the top of the
+	browser window, in order to prevent the content of the page from jumping up. */
+
+.header-fixed-placeholder{
+	height: 80px;
+	display: none;
+}
+
+/* Logo */
+
+.header-fixed .header-limiter h1 {
+	float: right;
+	font: normal 28px Cookie, Arial, Helvetica, sans-serif;
+	line-height: 40px;
+	margin: 0;
+}
+
+.header-fixed .header-limiter h1 span {
+	color: #5383d3;
+}
+
+/* The navigation links */
+
+.header-fixed .header-limiter a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.header-fixed .header-limiter nav {
+	font:16px Arial, Helvetica, sans-serif;
+	line-height: 40px;
+	float: left;
+}
+
+.header-fixed .header-limiter nav a{
+	display: inline-block;
+	padding: 0 5px;
+	text-decoration:none;
+	color: #ffffff;
+	opacity: 0.9;
+}
+
+.header-fixed .header-limiter nav a:hover{
+	opacity: 1;
+}
+
+.header-fixed .header-limiter nav a.selected {
+	color: #608bd2;
+	pointer-events: none;
+	opacity: 1;
+}
+
+
+
+body.fixed .header-fixed-placeholder {
+	display: block;
+}
+
+body.fixed .header-fixed .header-limiter h1 {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+body.fixed .header-fixed .header-limiter nav {
+	line-height: 28px;
+	font-size: 13px;
+}
+
+
+/* Making the header responsive */
+
+@media all and (max-width: 600px) {
+
+	.header-fixed {
+		padding: 20px 0;
+		height: 75px;
+	}
+
+	.header-fixed .header-limiter h1 {
+		float: none;
+		margin: -8px 0 10px;
+		text-align: center;
+		font-size: 24px;
+		line-height: 1;
+	}
+
+	.header-fixed .header-limiter nav {
+		line-height: 1;
+		float:none;
+	}
+
+	.header-fixed .header-limiter nav a {
+		font-size: 13px;
+	}
+
+	body.fixed .header-fixed {
+		display: none;
+	}
+
+}
+
+ 
+        
+    </style>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+  
     
  <body>
-      <div class="header">
-            <img class="logo" src="/img/logo.jpg" alt="CloudSystems">
-            <h1 class="header-text">أنظمة غيمة لتقنية المعلومات</h1>
-            <ul class="menu-bar">
-                <li class="navbar"><a href="/index.html">الرئيسية</a></li>
-                <li class="navbar"><a href="/faq.html">الأسئلة الشائعة</a></li>
-                <li class="navbar"><a href="/summer-training.html">التدريب الصيفي</a></li>
-                <li class="navbar"><a href="/contact.html">اتصل بنا</a></li>
-            </ul>
-       </div>
+    <header class="header-fixed">
+
+	<div class="header-limiter">
+        
+<img class="logo" src="/img/logo.jpg" alt="CloudSystems">
+		<h1 class="hed">   أنظمة<span> غيمة</span></h1>
+
+		<nav>
+            <a href="/index.html">الرئيسية</a>
+            <a href="/faq.html">الأسئلة الشائعة</a>
+            <a href="/summer-training.html">التدريب الصيفي</a>
+			
+			
+			
+		</nav>
+
+	</div>
+
+</header>
+
+<!-- You need this element to prevent the content of the page from jumping up -->
+<div class="header-fixed-placeholder"></div>
+
+<!-- The content of your page would go here. -->
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+
+	$(document).ready(function(){
+
+		var showHeaderAt = 150;
+
+		var win = $(window),
+				body = $('body');
+
+		// Show the fixed header only on larger screen devices
+
+		if(win.width() > 600){
+
+			// When we scroll more than 150px down, we set the
+			// "fixed" class on the body element.
+
+			win.on('scroll', function(e){
+
+				if(win.scrollTop() > showHeaderAt) {
+					body.addClass('fixed');
+				}
+				else {
+					body.removeClass('fixed');
+				}
+			});
+
+		}
+
+	});
+
+</script>
             <div class="content">
            <div class="contactForm">
                 <p>الإسم الكريم: </p>
@@ -101,5 +461,61 @@
        </div>
         
 
+     
+     
+     	<footer class="footer-distributed">
+
+			<div class="footer-right">
+
+			
+                
+                
+                <p class="footer-company-about">
+				
+                        	<span>حول غيمة</span>
+                        تهتم مؤسسة أنظمة غيمة لتقنية المعلومات في الحوسبة السحابية والبيانات الضخمة وماهو تأثير ذلك بالنسبة للشركات وكيف تستطيع تقديم أفضل الحلول للأفراد والشركات. بالإضافة إلى اهتمامها بتقديم فرصة تدريب تطوعية وتهيئة الطلاب لسوق العمل.
+                    </p>
+
+			</div>
+
+			<div class="footer-center">
+
+				   <div>
+                        	<i class="fa fa-map-marker"></i>
+                        <p><span>شارع النهار</span> الرياض، المملكة العربية السعودية
+                        </p>
+                    </div>
+
+
+                    <div>
+                        	<i class="fa fa-envelope"></i>
+                        <p><a href="mailto:cloudsystems2017@gmail.com">cloudsystems2017@gmail.com</a>
+                        </p>
+                    </div>
+
+			</div>
+
+			<div class="footer-left">
+ <img class="footer-icons" src="/img/logo.jpg" alt="CloudSystems">
+				
+   	<h3> <span>غيمة </span></h3>
+
+                    <p class="footer-links">
+                        
+                     
+                        
+          <a href="/index.html">الرئيسية</a>
+                        .
+   <a href="/faq.html">الأسئلة الشائعة</a>
+     
+                        .
+       <a href="/contact.html">اتصل بنا</a>
+                    </p>
+
+        <p class="footer-company-name">أنظمة غيمة &copy; 2017</p>
+			</div>
+
+		</footer>
+     
     </body>
 </html>
